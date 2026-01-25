@@ -1,0 +1,20 @@
+{
+  "id": 101,
+  "name": "Rushikesh",
+  "email": "rushi@test.com",
+  "address": {
+    "city": "Pune",
+    "state": "MH",
+    "pincode": 411001
+  };
+  "projects": [
+    {
+      "name": "API Automation",
+      "duration": "6 months"
+    },
+    {
+      "name": "UI Automation",
+      "duration": "4 months"
+    }
+  ]
+}

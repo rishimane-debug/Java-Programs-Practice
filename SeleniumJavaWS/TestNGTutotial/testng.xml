@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Load deapartment">
+	<parameter name="URL" value="qaClickAcademy.com"/>
+	<listeners>
+		<listener class-name = "test.Listeners"/>
+	</listeners>
+	
+  <test thread-count="5" name="Personal loan">
+	  <parameter name="URL" value="RahulShettyAcdamy.com"/>
+	  <parameter name="username" value="rushikesh"/>
+    <classes>
+      <class name="test.day1"/>
+      <class name="test.day2"/>
+      <class name="test.day4">
+		  <methods>
+			  <include name="LoginApiCarLoan"></include>
+		  </methods>
+	  </class>
+    </classes>
+  </test>
+  <test name="car loan">
+	  <classes>
+		  <class name="test.day3">
+			 <methods>
+				 <exclude name="Api.*"></exclude>
+			 </methods>
+		  </class>	  
+  	</classes>
+  </test>
+</suite> 

@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.TestngTextRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.257 s <<< FAILURE! -- in cucumber.TestngTextRunner
+cucumber.TestngTextRunner.runScenario["", "Error Validation"](1) -- Time elapsed: 6.137 s <<< FAILURE!
+java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or password]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at rahulshettyacademy.stepdefinations.StepDefiniationImpl.error_message_is_displayed(StepDefiniationImpl.java:68)
+	at ✽."Incorrect email or password" message is displayed(file:///C:/Eclipse/SeleniumJavaWS/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidation.feature:7)
+
