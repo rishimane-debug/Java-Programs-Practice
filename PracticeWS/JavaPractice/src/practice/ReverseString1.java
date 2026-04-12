@@ -15,11 +15,11 @@ public class ReverseString1 {
 		
 		if(reverse.equals(original))
 		{
-			
+			System.out.println("String is palindrom");
 		}
 		else
 		{
-			
+			System.out.println("String is not palindrom");
 		}
 
 	}
