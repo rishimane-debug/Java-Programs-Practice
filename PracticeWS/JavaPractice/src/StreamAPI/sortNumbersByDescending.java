@@ -1,0 +1,19 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+import java.util.stream.*;
+class Main {
+    public static List<Integer> sortNumbersByDescending(List<Integer> numbers)
+    {
+       List<Integer> result = 
+           numbers.stream()
+                   .sorted(Comparator.reverseOrder())  //sorted(Comparator.reverseOrder()) for descending sort
+                   .collect(Collectors.toList());
+        return result;
+        
+    }
+    public static void main(String[] args) {
+      List<Integer> numbers = Arrays.asList(10, 40, 5,50, 30, 25, 14);
+        System.out.println(sortNumbersByDescending(numbers));
+    }
+}
