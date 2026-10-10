@@ -1,0 +1,20 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+import java.util.stream.*;
+class Main {
+         public static String[] removeDuplicatesFromArray(String[] names)
+    {
+        String[] result = 
+            Arrays.stream(names)
+                .distinct()
+                .toArray(String[]::new);
+        return result;
+    }
+    
+    public static void main(String[] args) {
+      String[] names = {"Rushi", "Naveen", "Naveen", "Nikita", "Ankita", "Ankita", "Ashwin"};
+        System.out.println(Arrays.toString(removeDuplicatesFromArray(names)));
+        
+    }
+}
